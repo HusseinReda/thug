@@ -1,5 +1,4 @@
 require 'thor'
-# require 'natives/apps'
 
 module Thug
   class Cli < Thor
