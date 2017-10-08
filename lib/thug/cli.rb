@@ -20,6 +20,9 @@ module Thug
 
       # detect current os, platform and package manager
       platform_detector = Thug::PlatformDetector.new
+     
+      platform = platform_detector.get_platform
+      os = platform_detector.get_os
 
       # check internet
       # if connected, request system dependencies
