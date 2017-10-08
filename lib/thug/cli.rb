@@ -1,5 +1,5 @@
 require 'thor'
-require 'thug/gem_detector'
+require 'thug/loader'
 
 module Thug
   class Cli < Thor
@@ -15,10 +15,11 @@ module Thug
         raise Exception.new("No Gemfile was found in the current directory")
       end
 
+      # list gems in current project
       current_gems = gem_detector.list_gems
-      puts current_gems
 
       # detect current os, platform and package manager
+      platform_detector = Thug::PlatformDetector.new
 
       # check internet
       # if connected, request system dependencies

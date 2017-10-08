@@ -1,11 +1,13 @@
 module Thug
 	class GemDetector
 
+		# initialize gemfile path
 		def initialize
 			cwd = Dir.getwd
 			@gemfile_path = cwd + "/Gemfile"
 		end
 
+		# check if gemfile exists in the current directory
 		def has_gem?
 			File.file?(@gemfile_path)
 		end
@@ -17,6 +19,7 @@ module Thug
 			puts "updated"
 		end
 
+		# lists gems in current project
 		def list_gems
 			self.update_lock
 

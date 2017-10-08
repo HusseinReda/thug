@@ -4,6 +4,7 @@
 require "bundler"
 require 'thug/cli'
 
+
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 
 Thug::Cli.start
