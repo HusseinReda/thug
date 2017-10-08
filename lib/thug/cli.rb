@@ -7,7 +7,7 @@ module Thug
 
     def list(*entry_names)
       # detect gem file and create/update gem .lock file
-
+      
       # detect current os, platform and package manager
 
       # check internet
