@@ -15,6 +15,9 @@ module Thug
         raise Exception.new("No Gemfile was found in the current directory")
       end
 
+      current_gems = gem_detector.list_gems
+      puts current_gems
+
       # detect current os, platform and package manager
 
       # check internet
