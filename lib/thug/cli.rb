@@ -1,13 +1,20 @@
 require 'thor'
+require 'thug/gem_detector'
 
 module Thug
   class Cli < Thor
 
     default_task :list
 
+    desc 'thug list', 'lists system dependencies in current project'
     def list(*entry_names)
       # detect gem file and create/update gem .lock file
+      gem_detector = Thug::GemDetector.new
       
+      unless gem_detector.has_gem?
+        raise Exception.new("No Gemfile was found in the current directory")
+      end
+
       # detect current os, platform and package manager
 
       # check internet
