@@ -1,6 +1,7 @@
 require 'thor'
 require 'thug/loader'
 require 'thug/utils'
+require 'thug/http_client'
 
 module Thug
   class Cli < Thor
@@ -30,7 +31,8 @@ module Thug
 
       if utils.internet?
         # if connected, request system dependencies
-
+        client = Thug::HttpClient.new
+        dependencies = client.get_dependencies platform, current_gems
       else
         # if not, get system dependencies from local file
 
