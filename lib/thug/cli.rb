@@ -1,5 +1,6 @@
 require 'thor'
 require 'thug/loader'
+require 'thug/utils'
 
 module Thug
   class Cli < Thor
@@ -25,11 +26,18 @@ module Thug
       os = platform_detector.get_os
 
       # check internet
-      # if connected, request system dependencies
+      utils = Thug::utils.new
 
-      # if not, get system dependencies from local file
+      if utils.internet?
+        # if connected, request system dependencies
+
+      else
+        # if not, get system dependencies from local file
+
+      end
 
       # run install command to install dependencies
+      
     rescue => ex
       $stderr.puts ex.message
     end
