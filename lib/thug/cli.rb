@@ -27,7 +27,7 @@ module Thug
       os = platform_detector.get_os
 
       # check internet
-      utils = Thug::utils.new
+      utils = Thug::Utils.new
 
       if utils.internet?
         # if connected, request system dependencies
@@ -35,7 +35,7 @@ module Thug
         dependencies = client.get_dependencies platform, current_gems
       else
         # if not, get system dependencies from local file
-
+        
       end
 
       # run install command to install dependencies
