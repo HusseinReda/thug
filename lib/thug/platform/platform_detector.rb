@@ -3,7 +3,13 @@ module Thug
 		
 		# get platform: ubuntu, debian, centos
 		def get_platform
+			
+			if(/darwin/i =~ RUBY_PLATFORM)
+				return "mac"
+			end
+
 			platform = `ohai platform`
+
 
 			if platform =~ /ubuntu/i
 				platform = "ubuntu"
@@ -34,6 +40,8 @@ module Thug
 				pkg = "apt-get"
 			when "centos"
 				pkg = "yum"
+			when "mac"
+				pkg = "brew"
 			end
 
 			pkg

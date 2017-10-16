@@ -15,7 +15,7 @@ module Thug
       gem_detector = Thug::GemDetector.new
       
       unless gem_detector.has_gem?
-        raise Exception.new("No Gemfile was found in the current directory")
+        raise "No Gemfile was found in the current directory"
       end
 
       # list gems in current project
