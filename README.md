@@ -39,9 +39,9 @@ Thug gem relies on users to keep its system dependencies list up to date, Bug re
 
 Among the known issues is running into
 
-	```
+	
 	'method_missing': undefined method `this' for #<Gem::Specification
-	```
+	
 
 just update your rubygems by running:
 
