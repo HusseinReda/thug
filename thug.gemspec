@@ -37,8 +37,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
   
-  spec.add_runtime_dependency "ohai"
-  spec.add_runtime_dependency "thor"
-  spec.add_runtime_dependency "bundler"
-  spec.add_runtime_dependency "json"
+  spec.add_runtime_dependency "ohai", '~> 13.5'
+  spec.add_runtime_dependency "thor", '~> 0.20.0'
+  spec.add_runtime_dependency "bundler", '~> 1.15'
+  spec.add_runtime_dependency "json", '~> 2.1'
 end
