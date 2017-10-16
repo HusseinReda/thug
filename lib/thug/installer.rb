@@ -3,8 +3,7 @@ module Thug
 
 		def install_dependencies (pkg, dependencies)
 			deps = dependencies.join(" ")
-
-			puts `sudo #{pkg} install #{deps}`
+			puts `#{pkg} install #{deps}`
 		end
 	end
 end

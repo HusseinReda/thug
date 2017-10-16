@@ -35,11 +35,11 @@ module Thug
 		def get_package_manager platform
 			case platform
 			when "ubuntu"
-				pkg = "apt-get"
+				pkg = "sudo apt-get"
 			when "debian"
-				pkg = "apt-get"
+				pkg = "sudo apt-get"
 			when "centos"
-				pkg = "yum"
+				pkg = "sudo yum"
 			when "mac"
 				pkg = "brew"
 			end
