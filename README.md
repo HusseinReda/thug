@@ -35,6 +35,18 @@ Checkout the project and run
 
 Thug gem relies on users to keep its system dependencies list up to date, Bug reports and pull requests are welcome on here. or you can [Sign up](http://13.15.15.166:1337/register) at [Thug-Gem](http://13.15.15.166:1337)Thug-gem and start adding gems/dependencies.
 
+## Known Issues
+
+Among the known issues is running into
+
+	```
+	'method_missing': undefined method `this' for #<Gem::Specification
+	```
+
+just update your rubygems by running:
+
+	$ gem update --system
+
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
