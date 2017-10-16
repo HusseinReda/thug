@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["sherif"]
   spec.email         = ["sherif.alaa55@gmail.com"]
 
-  spec.summary       = "A thug gem that does all the system dirty work for you."
+  spec.summary       = "A thug gem that installs all the system level dependencies for you."
   spec.description   = "lists all the system level dependencies for you ruby project."
   spec.homepage      = "https://www.github.com"
   spec.license       = "MIT"

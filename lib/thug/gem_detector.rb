@@ -21,7 +21,7 @@ module Thug
 
 		# lists gems in current project
 		def list_gems
-			# self.update_lock
+			self.update_lock
 
 			@gemfile_path = File.expand_path(@gemfile_path)
 

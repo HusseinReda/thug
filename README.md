@@ -20,7 +20,7 @@ To install dependencies run
 
 ## Contributing
 
-Thug gem relies on users to keep its system dependencies list up to date, Bug reports and pull requests are welcome on here. or you can [Sign up](http://13.15.15.166/thug/register) at [Thug-Gem](http://13.15.15.166/thug)Thug-gem and start adding gems/dependencies.
+Thug gem relies on users to keep its system dependencies list up to date, Bug reports and pull requests are welcome on here. or you can [Sign up](http://13.15.15.166:1337/register) at [Thug-Gem](http://13.15.15.166:1337)Thug-gem and start adding gems/dependencies.
 
 ## License
 
@@ -28,4 +28,4 @@ The gem is available as open source under the terms of the [MIT License](http://
 
 ## Code of Conduct
 
-Everyone interacting in the Thug project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/thug/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Thug project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/sherifalaa55/thug/blob/master/CODE_OF_CONDUCT.md).

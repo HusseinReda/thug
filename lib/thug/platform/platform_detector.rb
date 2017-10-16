@@ -27,7 +27,16 @@ module Thug
 
 		# returns package manager of current platform
 		def get_package_manager platform
-			
+			case platform
+			when "ubuntu"
+				pkg = "apt-get"
+			when "debian"
+				pkg = "apt-get"
+			when "centos"
+				pkg = "yum"
+			end
+
+			pkg
 		end
 
 
