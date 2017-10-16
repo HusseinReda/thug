@@ -2,6 +2,13 @@
 
 Thug resolves all the system level dependencies for you project, by generating the "Gemfile.lock" it fetches the needed dependencies and proceeds to install it.
 
+# Dependencies
+
+* [Json](https://rubygems.org/gems/json): for parsing json responses.
+* [Ohai](https://github.com/opscode/ohai): to detect platform, platform version.
+* [Thor](https://github.com/erikhuda/thor): for command-line utlilties.
+
+
 ## Installation
 
 Install the gem via terminal using: 
