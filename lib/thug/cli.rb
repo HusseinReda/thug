@@ -2,6 +2,7 @@ require 'thor'
 require 'thug/loader'
 require 'thug/utils'
 require 'thug/http_client'
+require 'thug/installer'
 
 module Thug
   class Cli < Thor
@@ -39,7 +40,8 @@ module Thug
       end
 
       # run install command to install dependencies
-      
+      installer = Thug::Installer.new
+      installer.install_dependencies dependencies
     rescue => ex
       $stderr.puts ex.message
     end

@@ -1,38 +1,26 @@
 # Thug
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/thug`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Thug resolves all the system level dependencies for you project, by generating the "Gemfile.lock" it fetches the needed dependencies and proceeds to install it.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'thug'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Install the gem via terminal using: 
 
     $ gem install thug
 
 ## Usage
 
-TODO: Write usage instructions here
+Navigate to ruby project then run thug list to list all needed system dependencies:
 
-## Development
+	$ thug list
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+To install dependencies run
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+	$ thug install
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/thug. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Thug gem relies on users to keep its system dependencies list up to date, Bug reports and pull requests are welcome on here. or you can [Sign up](http://13.15.15.166/thug/register) at [Thug-Gem](http://13.15.15.166/thug)Thug-gem and start adding gems/dependencies.
 
 ## License
 

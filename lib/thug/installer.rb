@@ -3,7 +3,7 @@ module Thug
 
 		def install_dependencies dependencies
 			dependencies.each do |dep|
-				`sudo apt-get install #{dep}`
+				puts `sudo apt-get install #{dep}`
 			end
 		end
 	end
