@@ -5,7 +5,7 @@ module Thug
 	class HttpClient
 		
 		def get_dependencies platform, gems
-			uri = URI('http://13.95.24.166:1337/dependencies')
+			uri = URI('http://165.227.143.244:1337/dependencies')
 			res = Net::HTTP.post_form(uri, 'gems[]' => gems, 'platform' => platform)
 			deps = JSON.parse(res.body)
 			dependencies = deps.map do |dep|
